@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+ body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://img4.thuthuatphanmem.vn/uploads/2020/08/27/anh-nen-dep-ve-ha-noi_054022808.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f2f2f2;
+    padding: 0 0 0 20px;
+ margin-left: 50px;
+
+
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: rgba(255, 127, 80, 0.9); /* coral với trong suốt */
+    padding: 30px;
+    border-radius: 25px;
+    margin: 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav wrapper khung riêng */
+.nav-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeInScale 1s ease forwards;
+    transform: scale(0.9);
+    opacity: 0;
+   
+}
+
+/* Nav bên trong khung */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Link trong nav */
+nav a {
+    padding: 10px 20px;
+    color: chocolate;
+    background-color: rgba(240, 248, 255, 0.95);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: chocolate;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: coral;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeInScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.wa{
+    color: antiquewhite;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeInScale 1s ease forwards;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: coral;
+}
+
+.login-form label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.login-form input:focus {
+    border-color: coral;
+}
+
+.login-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: darkorange;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f9fc;
+  color: #eeeaea;
+}
+
+header {
+  background-color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: coral;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: coral;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://images.tuyensinh247.com/picture/article/2019/0810/500-sinh-vien-nhap-hoc-truong-cao-dang-quoc-te-btec-fpt-sau-hai-ngay-cong-bo-diem-chuan_1565407008_2.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: coral;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: darkorange;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #040404;
+  margin-top: 50px;
+}
+.contact-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #f6f9fc;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: coral;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: darkorange;
+}
+
+.contact-email {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-email a {
+  color: coral;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

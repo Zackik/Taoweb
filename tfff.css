@@ -1,0 +1,27 @@
+nav{
+    justify-content: center;
+    padding: 50px;
+    border: 10px;
+    border-radius: 20px;
+    margin: 0;
+    background-color: rgb(246, 246, 246);
+}
+nav a{
+    text-align: center;
+    padding: 20px;
+    color: rgb(220, 99, 12);
+    font-size: 20px;
+
+}
+body{
+    color: aliceblue;
+    background-color: antiquewhite;
+   background-image: url('https://img4.thuthuatphanmem.vn/uploads/2020/08/27/anh-nen-dep-ve-ha-noi_054022808.jpg');
+}
+footer{
+    background-color: rgb(2, 0, 0);
+    color: rgb(234, 228, 224);
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+}
